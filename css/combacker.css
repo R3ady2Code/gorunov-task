@@ -115,3 +115,9 @@
 .comebackerhidden {
   overflow: hidden;
 }
+
+@media (max-width: 1024px) {
+  #comebacker .over-window {
+    flex-direction: column;
+  }
+}
