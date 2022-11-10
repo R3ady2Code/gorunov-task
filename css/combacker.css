@@ -119,5 +119,6 @@
 @media (max-width: 1024px) {
   #comebacker .over-window {
     flex-direction: column;
+    max-width: 100%;
   }
 }
