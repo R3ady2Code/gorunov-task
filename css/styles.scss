@@ -1,0 +1,367 @@
+.container {
+  width: 100%;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 1150px;
+}
+
+.h2-text {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 10px;
+  line-height: 1.8rem;
+}
+
+.h3-text {
+  font-weight: 400;
+  font-stretch: normal;
+  font-family: 'Futura PT Web Bold';
+  font-size: 1.7rem;
+  line-height: normal;
+  color: #b4a76c;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.p-text {
+  width: 100%;
+  margin: 0 auto 38px;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.025em;
+  color: #232323;
+  a {
+    font-weight: 700;
+    color: #c00;
+    border-bottom: 1px dotted #c00;
+  }
+  &-comment {
+    line-height: 1.3rem;
+    margin: 0 auto 1em;
+  }
+}
+
+.logo {
+  width: 113px;
+  height: 47px;
+  .svg {
+    fill: #fff;
+  }
+  .back {
+    fill: #c00;
+  }
+  small {
+    text-align: center;
+    display: block;
+    margin-top: 0.6rem;
+
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 0.5rem;
+    line-height: 1.3em;
+    font-family: futura-pt, Geneva, Arial, sans-serif;
+    letter-spacing: 0.05rem;
+  }
+}
+
+section {
+  padding-top: 1rem;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 0.005rem 0.2rem 0.05rem #d3d3d3;
+
+  height: 60px;
+  width: 100%;
+  z-index: 99998;
+  max-width: 100vw;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__burger {
+    align-self: flex-start;
+    button {
+      background-color: transparent;
+      padding: 0;
+      width: 38px;
+      cursor: pointer;
+      .svg {
+        fill: #c00;
+        padding: 0.4rem 0.6rem;
+        .bottom,
+        .top {
+          transform-origin: center center;
+        }
+      }
+    }
+  }
+  &__nav {
+    ul {
+      display: flex;
+      align-items: center;
+
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      font-variant-numeric: normal;
+      font-variant-east-asian: normal;
+      font-weight: 200;
+      font-stretch: normal;
+      font-size: 0.8rem;
+      line-height: 1.5em;
+      letter-spacing: 0.2em;
+      span {
+        margin: 0 0.5rem;
+        font-size: 100%;
+      }
+    }
+    &-link {
+      a {
+        color: #999999;
+      }
+      &_active {
+        a {
+          color: #c00;
+        }
+      }
+      &:hover {
+        a {
+          color: #c00;
+        }
+      }
+    }
+  }
+}
+
+.news {
+  &__container {
+    max-width: 794px;
+    margin-left: 7%;
+
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.news-banner {
+  width: 100%;
+  margin-bottom: 24px;
+  &__square {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #c00;
+    color: #fff;
+    padding: 16px 32px;
+    position: absolute;
+    transform: translateY(70%);
+    font-family: 'Futura PT Web Bold';
+
+    letter-spacing: 0.02em;
+    max-width: 500px;
+    z-index: 2;
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2em;
+      text-transform: uppercase;
+      letter-spacing: 0.024em;
+
+      margin: 0 0 10px;
+    }
+    h2 {
+      font-size: 0.95rem;
+    }
+  }
+  &__image {
+    display: block;
+    margin-left: auto;
+    top: 0;
+    width: 60%;
+    z-index: 1;
+    height: 400px;
+    img {
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.question {
+  padding: 20px 32px 8px;
+  margin: 24px auto 50px;
+  border: 1px solid #c8b86c;
+  h3 {
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
+    color: #c00;
+
+    border-bottom: 1px dashed #000;
+  }
+}
+
+.comment {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+
+  max-width: 60%;
+  margin-bottom: 2rem;
+  &__avatar {
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &__body {
+    h3 {
+      font-size: 0.9rem;
+      font-weight: 400;
+      font-style: italic;
+    }
+    h4 {
+      font-size: 0.9rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.footer {
+  background: #2b3139;
+  height: 104px;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  text-align: center;
+
+  padding: 1.5rem 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+    &-link {
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      font-variant-numeric: normal;
+      font-variant-east-asian: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      line-height: 1.3em;
+      font-family: futura-pt, Geneva, Arial, sans-serif;
+      letter-spacing: 0.06em;
+      margin-right: 0.25rem;
+      font-size: 0.75rem;
+
+      color: #fff;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    li {
+      cursor: pointer;
+      img {
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    &__container {
+      max-width: 90%;
+    }
+  }
+
+  .comment {
+    max-width: 100%;
+  }
+
+  .footer {
+    height: auto;
+    .container {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__nav {
+      padding-top: 2.5rem;
+      padding-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      &-link {
+        font-size: 1.2rem;
+        line-height: 1.9em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    padding-top: 0;
+  }
+  .news-banner {
+    &__square {
+      position: static;
+      max-width: 80%;
+      margin: 0 auto;
+      transform: translateY(20px);
+    }
+    &__image {
+      margin: 0 auto;
+      min-width: 100%;
+    }
+  }
+}
